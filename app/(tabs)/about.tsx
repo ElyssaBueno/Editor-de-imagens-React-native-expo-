@@ -1,11 +1,9 @@
-import { Link } from "expo-router";
 import { StyleSheet, Text, View } from "react-native";
 
-export default function Index() {
+export default function AboutScreen() {
   return (
     <View style = {styles.container}>
-      <Text style = {styles.text}>LPIII</Text>
-      //<Link href={"/about"} style = {styles.link}>Vá para Sobre</Link>
+      <Text style = {styles.text}>Sobre</Text>
     </View>
   );
 }
@@ -19,11 +17,6 @@ export default function Index() {
     },
     text:{
       color: "#fdededff",
-    },
-    link:{
-      fontSize: 20,
-      textDecorationLine: "underline",
-      color: "#fe9030ff"
     }
   })
 
