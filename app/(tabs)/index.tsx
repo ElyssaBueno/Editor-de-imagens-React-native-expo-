@@ -1,11 +1,10 @@
-import { Link } from "expo-router";
 import { StyleSheet, Text, View } from "react-native";
 
 export default function Index() {
   return (
     <View style = {styles.container}>
       <Text style = {styles.text}>LPIII</Text>
-      //<Link href={"/about"} style = {styles.link}>Vá para Sobre</Link>
+      
     </View>
   );
 }
