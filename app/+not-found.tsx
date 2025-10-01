@@ -1,14 +1,15 @@
-import { Stack } from "expo-router";
-import { StyleSheet, Text, View } from "react-native";
+import { Link, Stack } from "expo-router";
+import { StyleSheet, View } from "react-native";
 
 export default function NotFoundScreen() {
   return (
     <>
     <Stack.Screen options = {{title: "Oops! Página não encontrada!"}}/>
-    <View style = {styles.container}>
-      <Text style = {styles.text}>LPIII</Text>
-      
-    </View>
+    <View style={styles.container}>
+        <Link href="/" style={styles.button}>
+          Go back to Home screen!
+        </Link>
+      </View>
     </>
   );
 }
@@ -27,6 +28,11 @@ export default function NotFoundScreen() {
       fontSize: 20,
       textDecorationLine: "underline",
       color: "#fe9030ff"
-    }
+    },
+    button: {
+    fontSize: 20,
+    textDecorationLine: 'underline',
+    color: '#fff',
+  },
   })
 
